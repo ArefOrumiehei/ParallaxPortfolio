@@ -46,7 +46,7 @@
     font-size: 20vw;
     color: #333;
     cursor: default;
-    text-align: center;
+    text-align: left;
     line-height: 100vh; /* centering vertical */
 }
 
@@ -152,13 +152,8 @@
     transition: all ease-in-out .2s;
     position: relative;
     overflow: hidden;
+    font-size: 1rem;
 }
-
-/* .detailsBtn:hover {
-    background-color: #555;
-    color: #111;
-    border: 2px solid #555;
-} */
 
 .detailsBtn::after {
     content: 'View Demo';
@@ -223,6 +218,10 @@
     text-align: center;
 }
 
+.githubChart a {
+    text-decoration: none;
+}
+
 .dates {
     padding: 10px;
     font-size: 12px;
@@ -242,7 +241,7 @@
     height: 15px;
     background-color: #171c25;
     border-radius: 2px;
-    transition: all ease 3s;
+    transition: all ease 2s;
 }
 
 .active:nth-child(4n){

@@ -10,6 +10,24 @@ const phones = document.querySelectorAll('.phone')
 const laptop = document.querySelector('.laptop')
 
 
+// Make Parallex Effect
+window.addEventListener("scroll" , () => {
+    const offsetY = window.scrollY
+    hiText.style.transform = `translateY(${offsetY * 0.2}px)`
+    hiImg.style.transform = `translate(${offsetY * 0.4}px , ${offsetY * 0.7}px)`
+    myName.style.transform = `translateX(${offsetY * 0.2}px)`
+    jobTitleContainers[0].style.backgroundPositionY = `${offsetY * 0.5}px`
+    jobTitleContainers[1].style.backgroundPositionY = `${-offsetY * 0.5}px`
+    jobTitles[0].style.transform = `translateX(calc(200vh - ${offsetY}px))`
+    jobTitles[1].style.transform = `translateX(calc(-300vh + ${offsetY}px))`
+    projectsTitle.style.transform = `translateY(calc(400vh - ${offsetY}px))`
+    phones[0].style.transform = `translateX(calc(500vh - ${offsetY}px))`
+    laptop.style.transform = `translateX(calc(600vh - ${offsetY}px))`
+    phones[1].style.transform = `translateX(calc(765vh - ${offsetY}px))`
+})
+
+
+// Make Github Box
 for (let i = 0; i < 365; i++) {
 
     const list = [ 0, 1, 2, 3, 41, 42, 43, 44, 82, 83, 123, 124, 125, 126, 164, 165, 166, 167,
@@ -30,23 +48,3 @@ for (let i = 0; i < 365; i++) {
     daysEl.classList = list.includes(i) ? 'box active' : 'box'
     githubBox.appendChild(daysEl)   
 }
-
-
-
-
-// Make Parallex Effect
-window.addEventListener("scroll" , () => {
-    const offsetY = window.scrollY
-    hiText.style.transform = `translateY(${offsetY * 0.2}px)`
-    hiImg.style.transform = `translate(${offsetY * 0.4}px , ${offsetY * 0.7}px)`
-    myName.style.transform = `translateX(${offsetY * 0.2}px)`
-    jobTitleContainers[0].style.backgroundPositionY = `${offsetY * 0.5}px`
-    jobTitleContainers[1].style.backgroundPositionY = `${-offsetY * 0.5}px`
-    jobTitles[0].style.transform = `translateX(calc(200vh - ${offsetY}px))`
-    jobTitles[1].style.transform = `translateX(calc(-300vh + ${offsetY}px))`
-    projectsTitle.style.transform = `translateY(calc(400vh - ${offsetY}px))`
-    phones[0].style.transform = `translateX(calc(500vh - ${offsetY}px))`
-    laptop.style.transform = `translateX(calc(600vh - ${offsetY}px))`
-    phones[1].style.transform = `translateX(calc(765vh - ${offsetY}px))`
-
-})
