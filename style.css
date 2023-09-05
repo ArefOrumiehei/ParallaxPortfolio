@@ -6,7 +6,7 @@
 }
 
 .container {
-    background-color: #111;
+    background-color: #222831;
     overflow: hidden;
 }
 
@@ -24,7 +24,7 @@
 .hiTextContainer h1 {
     font-size: 55vw;
     cursor: default;
-    color: #333;
+    color: #334756;
 }
 
 .hiImgContainer {
@@ -38,7 +38,7 @@
 
 
 .nameContainer {
-    background-color: rebeccapurple;
+    background-color: #F0A500;
     height: 100vh;
 }
 
@@ -55,17 +55,17 @@
 }
 
 .dark {
-    background-image: url('./images/bg1.png');
+    background-image: url('./assets/images/bg1.png');
 }
 
 .purple {
-    background: rebeccapurple url('./images/bg2.png');
+    background: #393E46 url('./assets/images/bg2.png');
 }
 
 .jobTitleContainer h2 {
     font-size: 10vw;
     line-height: 100vh;
-    color: #333;
+    color: #F0A500;
     cursor: default;
 }
 
@@ -79,7 +79,7 @@
 
 .projectsTitle {
     font-size: 10vw;
-    color: #333;
+    color: #F0A500;
 }
 
 .project {
@@ -209,7 +209,12 @@
 
 .githubTitle {
     font-size: 100px;
-    color: #333;
+    color: #EEEEEE;
+    transition: all .3s ease;
+}
+
+#githubText:hover {
+    color: #F0A500;
 }
 
 .githubChart {
